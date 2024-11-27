@@ -531,7 +531,7 @@ The following table lists the supported Json types. These types are fully compat
 │                                │                             │ }                              │
 │                                │                             │                                │
 ├────────────────────────────────┼─────────────────────────────┼────────────────────────────────┤
-│ const R = Type.Ref('T')        │ type R = unknown            │ const R = { $ref: 'T' }        │
+│ const R = Type.Ref('T' | T)    │ type R = unknown            │ const R = { $ref: 'T' }        │
 │                                │                             │                                │
 └────────────────────────────────┴─────────────────────────────┴────────────────────────────────┘
 ```
